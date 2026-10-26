@@ -1,0 +1,1158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ROYAL DRIVE | Luxury Car Rental</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        serif: ['Georgia', 'serif'],
+                        sans: ['Inter', 'Arial', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="bg-black text-white font-sans">
+
+    <!-- ================= NAVBAR ================= -->
+    <header class="fixed top-0 left-0 w-full z-50 bg-black/80 backdrop-blur-lg border-b border-white/10">
+
+        <nav class="max-w-7xl mx-auto px-6 lg:px-10 py-5 flex items-center justify-between">
+
+            <!-- Logo -->
+            <a href="#" class="text-2xl md:text-3xl font-bold tracking-[0.25em]">
+                ROYAL<span class="text-yellow-500">DRIVE</span>
+            </a>
+
+            <!-- Desktop Menu -->
+            <div class="hidden md:flex items-center gap-8 text-sm uppercase tracking-wider">
+
+                <a href="#home" class="text-white hover:text-yellow-500 transition">
+                    Home
+                </a>
+
+                <a href="#fleet" class="text-white hover:text-yellow-500 transition">
+                    Fleet
+                </a>
+
+                <a href="#about" class="text-white hover:text-yellow-500 transition">
+                    About
+                </a>
+
+                <a href="#services" class="text-white hover:text-yellow-500 transition">
+                    Services
+                </a>
+
+                <a href="#reviews" class="text-white hover:text-yellow-500 transition">
+                    Reviews
+                </a>
+
+                <a href="#contact" class="text-white hover:text-yellow-500 transition">
+                    Contact
+                </a>
+
+            </div>
+
+            <!-- Button -->
+            <a href="#booking"
+               class="hidden md:inline-block bg-yellow-500 text-black px-6 py-3 rounded-full font-semibold hover:bg-yellow-400 transition">
+                Book Now
+            </a>
+
+            <!-- Mobile Icon -->
+            <button class="md:hidden text-2xl text-yellow-500">
+                ☰
+            </button>
+
+        </nav>
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+    <section id="home"
+        class="min-h-screen flex items-center relative overflow-hidden pt-28">
+
+        <!-- Background -->
+        <div class="absolute inset-0">
+            <img
+                src="https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=2000&q=90"
+                class="w-full h-full object-cover"
+                alt="Luxury car">
+        </div>
+
+        <!-- Overlay -->
+        <div class="absolute inset-0 bg-black/70"></div>
+
+        <!-- Hero Content -->
+        <div class="relative z-10 max-w-7xl mx-auto px-6 lg:px-10 w-full">
+
+            <div class="max-w-3xl">
+
+                <p class="text-yellow-500 uppercase tracking-[0.4em] text-sm mb-6">
+                    Premium Car Rental
+                </p>
+
+                <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold leading-tight font-serif">
+                    Drive Your
+                    <span class="text-yellow-500">Dream.</span>
+                </h1>
+
+                <p class="text-gray-300 text-lg md:text-xl mt-7 max-w-2xl leading-relaxed">
+                    Experience the ultimate luxury on the road with our exclusive
+                    collection of premium and exotic vehicles.
+                </p>
+
+                <div class="flex flex-wrap gap-4 mt-10">
+
+                    <a href="#fleet"
+                       class="bg-yellow-500 text-black px-8 py-4 rounded-full font-bold hover:bg-yellow-400 hover:scale-105 transition">
+                        Explore Fleet
+                    </a>
+
+                    <a href="#booking"
+                       class="border border-white/40 px-8 py-4 rounded-full font-semibold hover:bg-white hover:text-black transition">
+                        Reserve a Car
+                    </a>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Bottom Scroll -->
+        <div class="absolute bottom-8 left-1/2 -translate-x-1/2 text-gray-400 text-xs uppercase tracking-[0.3em]">
+            Scroll to explore
+        </div>
+
+    </section>
+
+
+    <!-- ================= STATS ================= -->
+    <section class="bg-zinc-950 border-y border-white/10">
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-10 py-12 grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+
+            <div>
+                <h3 class="text-4xl font-bold text-yellow-500">50+</h3>
+                <p class="text-gray-400 mt-2">Luxury Cars</p>
+            </div>
+
+            <div>
+                <h3 class="text-4xl font-bold text-yellow-500">15+</h3>
+                <p class="text-gray-400 mt-2">Premium Brands</p>
+            </div>
+
+            <div>
+                <h3 class="text-4xl font-bold text-yellow-500">8K+</h3>
+                <p class="text-gray-400 mt-2">Happy Clients</p>
+            </div>
+
+            <div>
+                <h3 class="text-4xl font-bold text-yellow-500">24/7</h3>
+                <p class="text-gray-400 mt-2">Customer Support</p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FLEET ================= -->
+    <section id="fleet" class="py-24 bg-black">
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+            <div class="text-center mb-16">
+
+                <p class="text-yellow-500 uppercase tracking-[0.3em] text-sm mb-4">
+                    Our Collection
+                </p>
+
+                <h2 class="text-4xl md:text-6xl font-bold font-serif">
+                    The Luxury Fleet
+                </h2>
+
+                <p class="text-gray-400 max-w-2xl mx-auto mt-5">
+                    Choose from our carefully selected collection of premium
+                    vehicles designed for unforgettable journeys.
+                </p>
+
+            </div>
+
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+                <!-- Car 1 -->
+                <div class="group bg-zinc-900 rounded-3xl overflow-hidden border border-white/10 hover:border-yellow-500/50 transition">
+
+                    <div class="relative overflow-hidden">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=1200&q=80"
+                            class="w-full h-64 object-cover group-hover:scale-110 transition duration-700"
+                            alt="Mercedes">
+
+                        <span class="absolute top-5 left-5 bg-yellow-500 text-black px-4 py-2 rounded-full text-xs font-bold">
+                            PREMIUM
+                        </span>
+
+                    </div>
+
+                    <div class="p-7">
+
+                        <div class="flex justify-between items-start">
+
+                            <div>
+                                <h3 class="text-2xl font-bold">
+                                    Mercedes AMG GT
+                                </h3>
+
+                                <p class="text-gray-500 mt-1">
+                                    Sports Coupe
+                                </p>
+                            </div>
+
+                            <div class="text-yellow-500">
+                                ★ 4.9
+                            </div>
+
+                        </div>
+
+                        <div class="flex gap-5 text-gray-400 text-sm mt-6">
+
+                            <span>⚡ 577 HP</span>
+                            <span>⚙ Automatic</span>
+
+                        </div>
+
+                        <div class="border-t border-white/10 mt-6 pt-6 flex justify-between items-center">
+
+                            <div>
+                                <span class="text-2xl font-bold">
+                                    ₹18,000
+                                </span>
+
+                                <span class="text-gray-500 text-sm">
+                                    / day
+                                </span>
+                            </div>
+
+                            <a href="#booking"
+                               class="bg-white text-black px-5 py-3 rounded-full font-semibold hover:bg-yellow-500 transition">
+                                Rent
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Car 2 -->
+                <div class="group bg-zinc-900 rounded-3xl overflow-hidden border border-white/10 hover:border-yellow-500/50 transition">
+
+                    <div class="relative overflow-hidden">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1555215695-3004980ad54e?auto=format&fit=crop&w=1200&q=80"
+                            class="w-full h-64 object-cover group-hover:scale-110 transition duration-700"
+                            alt="BMW">
+
+                        <span class="absolute top-5 left-5 bg-yellow-500 text-black px-4 py-2 rounded-full text-xs font-bold">
+                            POPULAR
+                        </span>
+
+                    </div>
+
+                    <div class="p-7">
+
+                        <div class="flex justify-between items-start">
+
+                            <div>
+                                <h3 class="text-2xl font-bold">
+                                    BMW M4 Competition
+                                </h3>
+
+                                <p class="text-gray-500 mt-1">
+                                    Performance Coupe
+                                </p>
+                            </div>
+
+                            <div class="text-yellow-500">
+                                ★ 4.8
+                            </div>
+
+                        </div>
+
+                        <div class="flex gap-5 text-gray-400 text-sm mt-6">
+
+                            <span>⚡ 503 HP</span>
+                            <span>⚙ Automatic</span>
+
+                        </div>
+
+                        <div class="border-t border-white/10 mt-6 pt-6 flex justify-between items-center">
+
+                            <div>
+                                <span class="text-2xl font-bold">
+                                    ₹15,000
+                                </span>
+
+                                <span class="text-gray-500 text-sm">
+                                    / day
+                                </span>
+                            </div>
+
+                            <a href="#booking"
+                               class="bg-white text-black px-5 py-3 rounded-full font-semibold hover:bg-yellow-500 transition">
+                                Rent
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Car 3 -->
+                <div class="group bg-zinc-900 rounded-3xl overflow-hidden border border-white/10 hover:border-yellow-500/50 transition">
+
+                    <div class="relative overflow-hidden">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1592198084033-aade902d1aae?auto=format&fit=crop&w=1200&q=80"
+                            class="w-full h-64 object-cover group-hover:scale-110 transition duration-700"
+                            alt="Ferrari">
+
+                        <span class="absolute top-5 left-5 bg-yellow-500 text-black px-4 py-2 rounded-full text-xs font-bold">
+                            EXOTIC
+                        </span>
+
+                    </div>
+
+                    <div class="p-7">
+
+                        <div class="flex justify-between items-start">
+
+                            <div>
+                                <h3 class="text-2xl font-bold">
+                                    Ferrari F8 Tributo
+                                </h3>
+
+                                <p class="text-gray-500 mt-1">
+                                    Supercar
+                                </p>
+                            </div>
+
+                            <div class="text-yellow-500">
+                                ★ 5.0
+                            </div>
+
+                        </div>
+
+                        <div class="flex gap-5 text-gray-400 text-sm mt-6">
+
+                            <span>⚡ 710 HP</span>
+                            <span>⚙ Automatic</span>
+
+                        </div>
+
+                        <div class="border-t border-white/10 mt-6 pt-6 flex justify-between items-center">
+
+                            <div>
+                                <span class="text-2xl font-bold">
+                                    ₹45,000
+                                </span>
+
+                                <span class="text-gray-500 text-sm">
+                                    / day
+                                </span>
+                            </div>
+
+                            <a href="#booking"
+                               class="bg-white text-black px-5 py-3 rounded-full font-semibold hover:bg-yellow-500 transition">
+                                Rent
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Car 4 -->
+                <div class="group bg-zinc-900 rounded-3xl overflow-hidden border border-white/10 hover:border-yellow-500/50 transition">
+
+                    <div class="overflow-hidden">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1606664515524-ed2f786a0bd6?auto=format&fit=crop&w=1200&q=80"
+                            class="w-full h-64 object-cover group-hover:scale-110 transition duration-700"
+                            alt="Audi">
+
+                    </div>
+
+                    <div class="p-7">
+
+                        <h3 class="text-2xl font-bold">
+                            Audi R8 V10
+                        </h3>
+
+                        <p class="text-gray-500 mt-1">
+                            Luxury Supercar
+                        </p>
+
+                        <div class="flex gap-5 text-gray-400 text-sm mt-6">
+                            <span>⚡ 602 HP</span>
+                            <span>⚙ Automatic</span>
+                        </div>
+
+                        <div class="border-t border-white/10 mt-6 pt-6 flex justify-between items-center">
+
+                            <div>
+                                <span class="text-2xl font-bold">
+                                    ₹35,000
+                                </span>
+
+                                <span class="text-gray-500 text-sm">
+                                    / day
+                                </span>
+                            </div>
+
+                            <a href="#booking"
+                               class="bg-white text-black px-5 py-3 rounded-full font-semibold hover:bg-yellow-500 transition">
+                                Rent
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Car 5 -->
+                <div class="group bg-zinc-900 rounded-3xl overflow-hidden border border-white/10 hover:border-yellow-500/50 transition">
+
+                    <div class="overflow-hidden">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1544636331-e26879cd4d9b?auto=format&fit=crop&w=1200&q=80"
+                            class="w-full h-64 object-cover group-hover:scale-110 transition duration-700"
+                            alt="Lamborghini">
+
+                    </div>
+
+                    <div class="p-7">
+
+                        <h3 class="text-2xl font-bold">
+                            Lamborghini Huracan
+                        </h3>
+
+                        <p class="text-gray-500 mt-1">
+                            Exotic Supercar
+                        </p>
+
+                        <div class="flex gap-5 text-gray-400 text-sm mt-6">
+                            <span>⚡ 631 HP</span>
+                            <span>⚙ Automatic</span>
+                        </div>
+
+                        <div class="border-t border-white/10 mt-6 pt-6 flex justify-between items-center">
+
+                            <div>
+                                <span class="text-2xl font-bold">
+                                    ₹50,000
+                                </span>
+
+                                <span class="text-gray-500 text-sm">
+                                    / day
+                                </span>
+                            </div>
+
+                            <a href="#booking"
+                               class="bg-white text-black px-5 py-3 rounded-full font-semibold hover:bg-yellow-500 transition">
+                                Rent
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Car 6 -->
+                <div class="group bg-zinc-900 rounded-3xl overflow-hidden border border-white/10 hover:border-yellow-500/50 transition">
+
+                    <div class="overflow-hidden">
+
+                        <img
+                            src="https://images.unsplash.com/photo-1511919884226-fd3cad34687c?auto=format&fit=crop&w=1200&q=80"
+                            class="w-full h-64 object-cover group-hover:scale-110 transition duration-700"
+                            alt="Porsche">
+
+                    </div>
+
+                    <div class="p-7">
+
+                        <h3 class="text-2xl font-bold">
+                            Porsche 911 Carrera
+                        </h3>
+
+                        <p class="text-gray-500 mt-1">
+                            Sports Car
+                        </p>
+
+                        <div class="flex gap-5 text-gray-400 text-sm mt-6">
+                            <span>⚡ 443 HP</span>
+                            <span>⚙ Automatic</span>
+                        </div>
+
+                        <div class="border-t border-white/10 mt-6 pt-6 flex justify-between items-center">
+
+                            <div>
+                                <span class="text-2xl font-bold">
+                                    ₹22,000
+                                </span>
+
+                                <span class="text-gray-500 text-sm">
+                                    / day
+                                </span>
+                            </div>
+
+                            <a href="#booking"
+                               class="bg-white text-black px-5 py-3 rounded-full font-semibold hover:bg-yellow-500 transition">
+                                Rent
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= ABOUT ================= -->
+    <section id="about" class="py-24 bg-zinc-950">
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-10 grid lg:grid-cols-2 gap-14 items-center">
+
+            <div class="rounded-3xl overflow-hidden">
+
+                <img
+                    src="https://images.unsplash.com/photo-1503736334956-4c8f8e92946d?auto=format&fit=crop&w=1400&q=80"
+                    class="w-full h-[550px] object-cover hover:scale-105 transition duration-700"
+                    alt="Luxury car">
+
+            </div>
+
+            <div>
+
+                <p class="text-yellow-500 uppercase tracking-[0.3em] text-sm">
+                    About Royal Drive
+                </p>
+
+                <h2 class="text-4xl md:text-6xl font-bold font-serif mt-5">
+                    Luxury Beyond
+                    <span class="text-yellow-500">Expectation.</span>
+                </h2>
+
+                <p class="text-gray-400 leading-8 mt-7">
+                    Royal Drive is a premium luxury car rental service built
+                    for people who appreciate performance, comfort and style.
+                    Our collection brings together some of the world's most
+                    desirable vehicles.
+                </p>
+
+                <p class="text-gray-400 leading-8 mt-5">
+                    Whether you're attending a special event, planning a
+                    weekend escape or simply want to experience a dream car,
+                    we make every journey unforgettable.
+                </p>
+
+                <div class="grid grid-cols-2 gap-6 mt-10">
+
+                    <div class="border-l-2 border-yellow-500 pl-5">
+                        <h3 class="text-2xl font-bold">10+</h3>
+                        <p class="text-gray-500">Years Experience</p>
+                    </div>
+
+                    <div class="border-l-2 border-yellow-500 pl-5">
+                        <h3 class="text-2xl font-bold">98%</h3>
+                        <p class="text-gray-500">Happy Clients</p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= SERVICES ================= -->
+    <section id="services" class="py-24 bg-black">
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+            <div class="text-center mb-16">
+
+                <p class="text-yellow-500 uppercase tracking-[0.3em] text-sm">
+                    Premium Experience
+                </p>
+
+                <h2 class="text-4xl md:text-6xl font-bold font-serif mt-4">
+                    Why Choose Us?
+                </h2>
+
+            </div>
+
+
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+
+                <div class="bg-zinc-900 border border-white/10 rounded-3xl p-8 hover:-translate-y-2 hover:border-yellow-500 transition duration-300">
+
+                    <div class="text-4xl mb-6">
+                        🏎️
+                    </div>
+
+                    <h3 class="text-xl font-bold">
+                        Premium Fleet
+                    </h3>
+
+                    <p class="text-gray-500 mt-4 leading-7">
+                        Drive some of the world's most exclusive and
+                        luxurious vehicles.
+                    </p>
+
+                </div>
+
+
+                <div class="bg-zinc-900 border border-white/10 rounded-3xl p-8 hover:-translate-y-2 hover:border-yellow-500 transition duration-300">
+
+                    <div class="text-4xl mb-6">
+                        🔑
+                    </div>
+
+                    <h3 class="text-xl font-bold">
+                        Easy Booking
+                    </h3>
+
+                    <p class="text-gray-500 mt-4 leading-7">
+                        Simple and transparent booking with no unnecessary
+                        complications.
+                    </p>
+
+                </div>
+
+
+                <div class="bg-zinc-900 border border-white/10 rounded-3xl p-8 hover:-translate-y-2 hover:border-yellow-500 transition duration-300">
+
+                    <div class="text-4xl mb-6">
+                        🛡️
+                    </div>
+
+                    <h3 class="text-xl font-bold">
+                        Fully Insured
+                    </h3>
+
+                    <p class="text-gray-500 mt-4 leading-7">
+                        Every vehicle is maintained and covered for your
+                        peace of mind.
+                    </p>
+
+                </div>
+
+
+                <div class="bg-zinc-900 border border-white/10 rounded-3xl p-8 hover:-translate-y-2 hover:border-yellow-500 transition duration-300">
+
+                    <div class="text-4xl mb-6">
+                        👑
+                    </div>
+
+                    <h3 class="text-xl font-bold">
+                        VIP Service
+                    </h3>
+
+                    <p class="text-gray-500 mt-4 leading-7">
+                        Experience personalized service from reservation
+                        to vehicle return.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= BOOKING ================= -->
+    <section id="booking" class="py-24 bg-zinc-950">
+
+        <div class="max-w-6xl mx-auto px-6">
+
+            <div class="bg-zinc-900 border border-white/10 rounded-[2rem] p-8 md:p-12">
+
+                <div class="text-center mb-12">
+
+                    <p class="text-yellow-500 uppercase tracking-[0.3em] text-sm">
+                        Reserve Your Ride
+                    </p>
+
+                    <h2 class="text-4xl md:text-5xl font-bold font-serif mt-4">
+                        Book Your Luxury Car
+                    </h2>
+
+                </div>
+
+
+                <form class="grid md:grid-cols-2 gap-6">
+
+                    <div>
+                        <label class="block text-gray-400 text-sm mb-2">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            placeholder="Your name"
+                            class="w-full bg-black border border-white/10 rounded-xl px-5 py-4 outline-none focus:border-yellow-500 transition">
+                    </div>
+
+
+                    <div>
+                        <label class="block text-gray-400 text-sm mb-2">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            placeholder="your@email.com"
+                            class="w-full bg-black border border-white/10 rounded-xl px-5 py-4 outline-none focus:border-yellow-500 transition">
+                    </div>
+
+
+                    <div>
+                        <label class="block text-gray-400 text-sm mb-2">
+                            Pickup Date
+                        </label>
+
+                        <input
+                            type="date"
+                            class="w-full bg-black border border-white/10 rounded-xl px-5 py-4 outline-none focus:border-yellow-500 transition">
+                    </div>
+
+
+                    <div>
+                        <label class="block text-gray-400 text-sm mb-2">
+                            Return Date
+                        </label>
+
+                        <input
+                            type="date"
+                            class="w-full bg-black border border-white/10 rounded-xl px-5 py-4 outline-none focus:border-yellow-500 transition">
+                    </div>
+
+
+                    <div>
+                        <label class="block text-gray-400 text-sm mb-2">
+                            Select Vehicle
+                        </label>
+
+                        <select
+                            class="w-full bg-black border border-white/10 rounded-xl px-5 py-4 outline-none focus:border-yellow-500 transition">
+
+                            <option>Mercedes AMG GT</option>
+                            <option>BMW M4 Competition</option>
+                            <option>Ferrari F8 Tributo</option>
+                            <option>Audi R8 V10</option>
+                            <option>Lamborghini Huracan</option>
+                            <option>Porsche 911 Carrera</option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div>
+                        <label class="block text-gray-400 text-sm mb-2">
+                            Pickup Location
+                        </label>
+
+                        <input
+                            type="text"
+                            placeholder="City / Airport"
+                            class="w-full bg-black border border-white/10 rounded-xl px-5 py-4 outline-none focus:border-yellow-500 transition">
+                    </div>
+
+
+                    <div class="md:col-span-2">
+
+                        <label class="block text-gray-400 text-sm mb-2">
+                            Additional Message
+                        </label>
+
+                        <textarea
+                            rows="4"
+                            placeholder="Tell us anything we should know..."
+                            class="w-full bg-black border border-white/10 rounded-xl px-5 py-4 outline-none focus:border-yellow-500 transition"></textarea>
+
+                    </div>
+
+
+                    <div class="md:col-span-2 text-center">
+
+                        <button
+                            type="submit"
+                            class="bg-yellow-500 text-black px-10 py-4 rounded-full font-bold hover:bg-yellow-400 hover:scale-105 transition">
+
+                            Request Reservation
+
+                        </button>
+
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= REVIEWS ================= -->
+    <section id="reviews" class="py-24 bg-black">
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+            <div class="text-center mb-16">
+
+                <p class="text-yellow-500 uppercase tracking-[0.3em] text-sm">
+                    Client Stories
+                </p>
+
+                <h2 class="text-4xl md:text-6xl font-bold font-serif mt-4">
+                    What Our Clients Say
+                </h2>
+
+            </div>
+
+
+            <div class="grid md:grid-cols-3 gap-7">
+
+                <div class="bg-zinc-900 border border-white/10 rounded-3xl p-8">
+
+                    <div class="text-yellow-500 text-xl">
+                        ★★★★★
+                    </div>
+
+                    <p class="text-gray-400 leading-8 mt-6">
+                        "The entire experience was incredible. The car was
+                        spotless, luxurious and exactly as promised."
+                    </p>
+
+                    <div class="flex items-center gap-4 mt-8">
+
+                        <div class="w-12 h-12 rounded-full bg-yellow-500 flex items-center justify-center text-black font-bold">
+                            AR
+                        </div>
+
+                        <div>
+                            <h4 class="font-bold">Arjun Rao</h4>
+                            <p class="text-gray-500 text-sm">Mumbai</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="bg-zinc-900 border border-white/10 rounded-3xl p-8">
+
+                    <div class="text-yellow-500 text-xl">
+                        ★★★★★
+                    </div>
+
+                    <p class="text-gray-400 leading-8 mt-6">
+                        "Professional service from beginning to end.
+                        The Ferrari was an absolute dream to drive."
+                    </p>
+
+                    <div class="flex items-center gap-4 mt-8">
+
+                        <div class="w-12 h-12 rounded-full bg-yellow-500 flex items-center justify-center text-black font-bold">
+                            RS
+                        </div>
+
+                        <div>
+                            <h4 class="font-bold">Rahul Sharma</h4>
+                            <p class="text-gray-500 text-sm">Delhi</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="bg-zinc-900 border border-white/10 rounded-3xl p-8">
+
+                    <div class="text-yellow-500 text-xl">
+                        ★★★★★
+                    </div>
+
+                    <p class="text-gray-400 leading-8 mt-6">
+                        "Excellent collection and amazing customer service.
+                        I'll definitely use Royal Drive again."
+                    </p>
+
+                    <div class="flex items-center gap-4 mt-8">
+
+                        <div class="w-12 h-12 rounded-full bg-yellow-500 flex items-center justify-center text-black font-bold">
+                            NK
+                        </div>
+
+                        <div>
+                            <h4 class="font-bold">Nikhil Kumar</h4>
+                            <p class="text-gray-500 text-sm">Bangalore</p>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= GALLERY ================= -->
+    <section class="py-24 bg-zinc-950">
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+            <div class="text-center mb-14">
+
+                <p class="text-yellow-500 uppercase tracking-[0.3em] text-sm">
+                    Gallery
+                </p>
+
+                <h2 class="text-4xl md:text-6xl font-bold font-serif mt-4">
+                    Life Behind The Wheel
+                </h2>
+
+            </div>
+
+
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+
+                <div class="col-span-2 row-span-2 overflow-hidden rounded-2xl">
+                    <img
+                        src="https://images.unsplash.com/photo-1542362567-b07e54358753?auto=format&fit=crop&w=1400&q=80"
+                        class="w-full h-full min-h-[400px] object-cover hover:scale-110 transition duration-700"
+                        alt="Luxury car">
+                </div>
+
+                <div class="overflow-hidden rounded-2xl">
+                    <img
+                        src="https://images.unsplash.com/photo-1492144534655-ae79c964c9d7?auto=format&fit=crop&w=1000&q=80"
+                        class="w-full h-48 object-cover hover:scale-110 transition duration-700"
+                        alt="Sports car">
+                </div>
+
+                <div class="overflow-hidden rounded-2xl">
+                    <img
+                        src="https://images.unsplash.com/photo-1553440569-bcc63803a83d?auto=format&fit=crop&w=1000&q=80"
+                        class="w-full h-48 object-cover hover:scale-110 transition duration-700"
+                        alt="Luxury vehicle">
+                </div>
+
+                <div class="overflow-hidden rounded-2xl">
+                    <img
+                        src="https://images.unsplash.com/photo-1504215680853-026ed2a45def?auto=format&fit=crop&w=1000&q=80"
+                        class="w-full h-48 object-cover hover:scale-110 transition duration-700"
+                        alt="Premium car">
+                </div>
+
+                <div class="overflow-hidden rounded-2xl">
+                    <img
+                        src="https://images.unsplash.com/photo-1519245659620-e859806a8d3b?auto=format&fit=crop&w=1000&q=80"
+                        class="w-full h-48 object-cover hover:scale-110 transition duration-700"
+                        alt="Luxury interior">
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CTA ================= -->
+    <section class="relative py-32 overflow-hidden">
+
+        <img
+            src="https://images.unsplash.com/photo-1494976388531-d1058494cdd8?auto=format&fit=crop&w=2000&q=90"
+            class="absolute inset-0 w-full h-full object-cover"
+            alt="Luxury car">
+
+        <div class="absolute inset-0 bg-black/75"></div>
+
+        <div class="relative max-w-4xl mx-auto px-6 text-center">
+
+            <p class="text-yellow-500 uppercase tracking-[0.4em] text-sm">
+                Your Journey Starts Here
+            </p>
+
+            <h2 class="text-5xl md:text-7xl font-bold font-serif mt-6">
+                Ready To
+                <span class="text-yellow-500">Drive?</span>
+            </h2>
+
+            <p class="text-gray-300 text-lg mt-6">
+                Choose your dream car and experience luxury like never before.
+            </p>
+
+            <a href="#booking"
+               class="inline-block mt-10 bg-yellow-500 text-black px-10 py-4 rounded-full font-bold hover:bg-yellow-400 hover:scale-105 transition">
+                Book Your Car
+            </a>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= CONTACT ================= -->
+    <section id="contact" class="py-24 bg-black">
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-10">
+
+            <div class="grid md:grid-cols-3 gap-10">
+
+                <div>
+
+                    <h3 class="text-2xl font-bold">
+                        ROYAL<span class="text-yellow-500">DRIVE</span>
+                    </h3>
+
+                    <p class="text-gray-500 mt-5 leading-7">
+                        Premium luxury car rentals for extraordinary
+                        journeys and unforgettable experiences.
+                    </p>
+
+                </div>
+
+
+                <div>
+
+                    <h3 class="font-bold text-lg mb-5">
+                        Contact
+                    </h3>
+
+                    <div class="space-y-3 text-gray-500">
+
+                        <p>📍 Mumbai, India</p>
+
+                        <p>📞 +91 98765 43210</p>
+
+                        <p>✉️ hello@royaldrive.com</p>
+
+                    </div>
+
+                </div>
+
+
+                <div>
+
+                    <h3 class="font-bold text-lg mb-5">
+                        Follow Us
+                    </h3>
+
+                    <div class="flex gap-3">
+
+                        <a href="#"
+                           class="w-11 h-11 rounded-full bg-zinc-900 flex items-center justify-center hover:bg-yellow-500 hover:text-black transition">
+                            IG
+                        </a>
+
+                        <a href="#"
+                           class="w-11 h-11 rounded-full bg-zinc-900 flex items-center justify-center hover:bg-yellow-500 hover:text-black transition">
+                            FB
+                        </a>
+
+                        <a href="#"
+                           class="w-11 h-11 rounded-full bg-zinc-900 flex items-center justify-center hover:bg-yellow-500 hover:text-black transition">
+                            X
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="border-t border-white/10 bg-zinc-950">
+
+        <div class="max-w-7xl mx-auto px-6 lg:px-10 py-7 flex flex-col md:flex-row justify-between gap-4 text-gray-500 text-sm">
+
+            <p>
+                © 2026 Royal Drive. All rights reserved.
+            </p>
+
+            <div class="flex gap-6">
+
+                <a href="#" class="hover:text-white transition">
+                    Privacy
+                </a>
+
+                <a href="#" class="hover:text-white transition">
+                    Terms
+                </a>
+
+                <a href="#" class="hover:text-white transition">
+                    Cookies
+                </a>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+</body>
+</html>
